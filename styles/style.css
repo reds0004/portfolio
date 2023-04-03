@@ -55,8 +55,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-h1, h2 {
-    font-family: 'Haettenschweiler','Kanit', sans-serif;
+body h1, h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
 /*** Header ***/
@@ -69,7 +71,7 @@ h1, h2 {
 }
 
 /*scale down svg*/
-.headderbanner svg {
+.headlogo {
     scale: 0.75;
 }
 
@@ -83,8 +85,7 @@ h1, h2 {
 
 /*style hamburger container*/
 .hamburger-box {
-    background-color: #004C8F;
-    opacity: 0.8;
+    background-color: rgba(0,76,143,0.8);
 }
 
 /*style hamburger*/
@@ -94,11 +95,11 @@ h1, h2 {
 
 /*make hamburger opaque when active*/
 .hamburger-box:active {
-    opacity: 1;
+    background-color: rgba(0,76,143,1);
 }
 
 .hamburger-box:hover {
-    opacity: 1;
+    background-color: rgba(0,76,143,1);
 }
 
 div.dropdown-menu {
@@ -121,11 +122,80 @@ div.dropdown-menu {
 }
 /*** Main ***/
 
+/** Hero Banner **/
+
+.hero {
+    background-image: url(../imgs/sunset_hull.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 1em;
+    padding: 1em;
+}
+
+.bluebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,76,143,0.8);
+}
+
+.bluebox h1, h2, article {
+    color: #f2f2f2;
+
+}
+
+.bluebox article {
+    margin: 0em 2em;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+a.bttn {
+    background-color: #004C8F;
+    border: 1px solid #f2f2f2;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.bttn div {
+    border: 1px solid #f2f2f2;
+    margin: 0.5em;
+    padding: 0em 1em;
+    color: #f2f2f2;
+    
+}
+
+.bttn div:hover {
+    text-decoration: underline;
+    color: #f2f2f2
+}
 /*** Footer ***/
 
 /* style footer */
 footer .container-fluid {
     background-color: #004C8F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials svg {
+    margin: 2em;
+    margin-bottom: 0em;
+}
+
+footer small {
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 1em;
 }
 
 /**** My Styles - Tablet ****/
