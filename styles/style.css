@@ -47,29 +47,83 @@ table {
 	border-spacing: 0;
 }
 
-/**** My Styles - Mobile****/
+/**** My Styles - Mobile ****/
 
 /*** General ***/
 
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Haettenschweiler','Kanit', sans-serif;
+}
+
 /*** Header ***/
 
+/*apply and style headder background img*/
 .headderbanner {
     background-image: url(../imgs/locks_flare.jpg);
     background-position: 50% 10%;
     background-size: 120%;
-    padding-top: 5rem;
 }
 
-/** nav **/
+/*scale down svg*/
+.headderbanner svg {
+    scale: 0.75;
+}
 
-.desktopnav {
+/*Hide desktop stuff*/
+.mobile-hid {
     display: none;
 }
 
+
+/** nav **/
+
+/*style hamburger container*/
+.hamburger-box {
+    background-color: #004C8F;
+    opacity: 0.8;
+}
+
+/*style hamburger*/
+.hamburger-box button {
+    border: 1px solid #f2f2f2;
+}
+
+/*make hamburger opaque when active*/
+.hamburger-box:active {
+    opacity: 1;
+}
+
+.hamburger-box:hover {
+    opacity: 1;
+}
+
+div.dropdown-menu {
+    background-color: #004C8F;
+}
+
+.dropdown-menu a {
+    color: #f2f2f2;
+    background-color: #004C8F;
+    border: 1px solid #f2f2f2;
+    opacity: 1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.dropdown-menu a:hover {
+    color: #f2f2f2;
+    background-color: #004C8F;
+    text-decoration: underline;
+}
 /*** Main ***/
 
 /*** Footer ***/
 
+/* style footer */
 footer .container-fluid {
     background-color: #004C8F;
 }
@@ -79,7 +133,10 @@ footer .container-fluid {
 
     /*** General ***/
 
+
     /*** Header ***/
+
+    
 
     .headderbanner {
         background-size: 150%;
@@ -98,18 +155,48 @@ footer .container-fluid {
 
     /*** General ***/
 
+    /*hide stuff from desktop*/
+    .desktop-hid {
+        display: none;
+    }
+
+    /*display stuff that was hidden from mobile*/
+    .mobile-hid {
+        display: block;
+    }
     /*** Header ***/
 
     .headderbanner {
-        padding-top: 10rem;
+        padding-top: 2rem;
     }
 
 
     /** nav **/
     
-    .desktopnav {
+    nav ul {
         display: flex;
         background-color: #004C8F;
+        margin-top: 2rem;
+    }
+
+    nav ul li {
+        border: 1px solid #f2f2f2;
+        width: 25%;
+        text-align: center;   
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    nav ul li a {
+        color: #f2f2f2;
+        font-family: 'Kanit', sans-serif;
+        
+    }
+
+    nav ul li a:hover {
+        color: #f2f2f2;
+        text-decoration: underline;
+        
     }
 
     .desktopnav ul {
