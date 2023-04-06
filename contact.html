@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <headder>
+    <header>
+        <a href="#skiptarget" class="skip">Skip to main content</a>
         <!--headder with background image-->
         <div class="headderbanner">
             <!--logo and link home-->
             <a href="index.html">
-                <?xml version="1.0" encoding="UTF-8"?>
                 <svg class="headlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
                     <defs>
                         <style>
@@ -67,10 +67,10 @@
             <!--simple nav for desktop-->
             <nav class="mobile-hid">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="current" href="#">Contact</a></li>
                 </ul>
             </nav>
             <!--dropdown nav for tablet and mobile-->
@@ -92,23 +92,56 @@
                             <a class="dropdown-item" href="index.html">Home</a>
                             <a class="dropdown-item" href="about.html">About</a>
                             <a class="dropdown-item" href="work.html">Work</a>
-                            <a class="dropdown-item" href="contact.html">Contact</a>
+                            <a class="dropdown-item current" href="#">Contact</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>  
-    </headder>
+    </header>
     <main>
         <div class="container">
-            <div class="hero">
-                <div class="bluebox">
-                    <h1>Welcome</h1>
-                    <h2>Hi, I'm Allen</h2>
-                    <article>I'm studying graphic and web design at Algonquin college. This is a portfolio website where I'm sharing my work.</article>
-                    <a class="bttn" href="contact.html"><div>Have A Look!</div></a>
+            <h1 id="skiptarget">Contact</h1>
+            <!--bootstrap grid-->
+            <div class="container tanbox">           
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <!--nested bootstrap grid-->
+                        <div class="container tanbox">           
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-6">
+                                    <article>
+                                        <h2>Like what you see?</h2>
+                                        I would love to hear from you! Please use the contact form to get in touch with me. I will do my best to respond to your message as soon as possible. Thank you for visiting my website!
+                                    </article>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Phone</h3>
+                                    <span>(613) - 447 - 3384</span>
+                                    <h3>Email</h3>
+                                    <span>aredsdev@outlook.com</span>
+                                    <h3>linkedIn</h3>
+                                    <span>make linked in</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                        <!--end of nested BS grid-->
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="/action_page.php" method="get">
+                            <h2>Leave A Message!</h2>
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
                 </div>
             </div>
+            <!--end of boot strap grid-->
         </div>
     </main>
     <footer>

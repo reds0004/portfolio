@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <headder>
+    <header>
+        <a href="#skiptarget" class="skip">Skip to main content</a>
         <!--headder with background image-->
         <div class="headderbanner">
             <!--logo and link home-->
             <a href="index.html">
-                <?xml version="1.0" encoding="UTF-8"?>
                 <svg class="headlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
                     <defs>
                         <style>
@@ -68,7 +68,7 @@
             <nav class="mobile-hid">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="#">About</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -90,7 +90,7 @@
                           <!-- dropdown items -->
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="index.html">Home</a>
-                            <a class="dropdown-item" href="about.html">About</a>
+                            <a class="current" href="#">About</a>
                             <a class="dropdown-item" href="work.html">Work</a>
                             <a class="dropdown-item" href="contact.html">Contact</a>
                         </div>
@@ -98,15 +98,30 @@
                 </nav>
             </div>
         </div>  
-    </headder>
+    </header>
     <main>
         <div class="container">
-            <div class="hero">
-                <div class="bluebox">
-                    <h1>Welcome</h1>
-                    <h2>Hi, I'm Allen</h2>
-                    <article>I'm studying graphic and web design at Algonquin college. This is a portfolio website where I'm sharing my work.</article>
-                    <a class="bttn" href="contact.html"><div>Have A Look!</div></a>
+            <div class="about">
+                <h1 class="skiptarget">About</h1>
+                <picture>
+
+                </picture>
+                <article>
+                    HI! My name is Allen and I'm a student in Algonquin College's Interactive Media Design program. I've spent the last 10 years of my life as a carpenter, and I've decided to change careers to work in web development.</article>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2>Skills</h2>
+                </div>
+                <div class="row tanbox">
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Photography</li>
+                        <li>WCAG Compliance</li>
+                    </ul>
+                </div>
+
                 </div>
             </div>
         </div>

@@ -13,12 +13,12 @@
 
 </head>
 <body>
-    <headder>
+    <header>
+        <a href="#skiptarget" class="skip">Skip to main content</a>
         <!--headder with background image-->
         <div class="headderbanner">
             <!--logo and link home-->
             <a href="index.html">
-                <?xml version="1.0" encoding="UTF-8"?>
                 <svg class="headlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100" viewBox="0 0 200 100">
                     <defs>
                         <style>
@@ -68,7 +68,7 @@
             <!--simple nav for desktop-->
             <nav class="mobile-hid">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="#">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -90,7 +90,7 @@
                           </a>
                           <!-- dropdown items -->
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item current" href="#">Home</a>
                             <a class="dropdown-item" href="about.html">About</a>
                             <a class="dropdown-item" href="work.html">Work</a>
                             <a class="dropdown-item" href="contact.html">Contact</a>
@@ -99,15 +99,15 @@
                 </nav>
             </div>
         </div>  
-    </headder>
+    </header>
     <main>
         <div class="container">
             <div class="hero">
                 <div class="container bluebox">
                              
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center align-items-center">
                         <div class="col-lg-5 headders">
-                            <h1>Welcome!</h1>
+                            <h1 id="skiptarget">Welcome!</h1>
                             <h2>Hi, I'm Allen</h2>
                         </div>
                         <div class="col-lg-5">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="bpbt" href="contact.html">
+                        <button class="bpbt" onclick="window.location.href='contact.html';">
                             <span>Have A Look!</span>
                         </button>
                     </div>

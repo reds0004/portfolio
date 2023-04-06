@@ -55,10 +55,16 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+/* style headdings set to inherit color from parent*/
 body h1, h2 {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
-    margin-top: 1em;
+    color: inherit;
+}
+
+/*have articles inherit font color*/
+article {
+    color: inherit;
 }
 
 /*** Header ***/
@@ -82,6 +88,23 @@ body h1, h2 {
 
 
 /** nav **/
+
+/*skiplink hider*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*skiplink un-hider*/
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
 
 /*style hamburger container*/
 .hamburger-box {
@@ -117,6 +140,12 @@ div.dropdown-menu {
     padding-bottom: 1em;
 }
 
+a.current {
+    color:#f2f2f2;
+    text-decoration: underline;
+}
+
+
 /* even out dropdown borders */
 div.dropdown-menu a:nth-child(2) {
     border-top: 0px;
@@ -148,19 +177,23 @@ div.dropdown-menu a:nth-child(3) {
 
 .bluebox {
     background-color: rgba(0,76,143,0.8);
+    padding-top: 4em;
     padding-bottom: 2em;
-}
-
-.bluebox h1, h2, article {
     color: #f2f2f2;
-
 }
+
+
 
 .bluebox article {
     margin: 0em 2em;
     text-align: center;
     font-size: 1.25em;
     line-height: 1.5;
+}
+
+.tanbox {
+    background-color: #D9BB96;
+    color: black;
 }
 
 .headders {
@@ -298,10 +331,7 @@ footer small {
 
     /*** Main ***/
 
-    .bluebox {
-        padding-top: 2em;
-        
-    }
+
     
     /*** Footer ***/
     
