@@ -108,17 +108,49 @@
                     <swiper-slide>
                         <h3>General Photography</h3>
                         <picture>
-
-                        </picture>
+                            <source media="(min-width: 992px)" 
+                            srcset="imgs/duck-1800_x_1199.jpg"
+                            >
+                            <source media="(min-width: 768px)" 
+                            srcset="imgs/duck-900_x_599.jpg 1x, imgs/duck-1800_x_1199.jpg 2x"
+                            >
+                            <source media="(min-width: 768px)" 
+                            srcset="imgs/duck-600_x_400.jpg 1x, imgs/duck-900_x_599.jpg 2x"
+                            >
+                            <source media="(max-width: 575px)" 
+                            srcset="imgs/duck-300_x_199.jpg 1x, imgs/duck-600_x_400.jpg 2x"
+                            >
+                            <img src="imgs/duck-600_x_400.jpg" alt="A male wood duck">
+                          </picture>
                     </swiper-slide>
                     <swiper-slide>
                         <h3>Portraits</h3>
+                        <picture>
+                            <source media="(min-width: 992px)" 
+                            srcset="imgs/alex-1800_x_1012.jpg"
+                            >
+                            <source media="(min-width: 768px)" 
+                            srcset="imgs/alex-900_x_506.jpg 1x, imgs/alex-1800_x_1012.jpg 2x"
+                            >
+                            <source media="(min-width: 768px)" 
+                            srcset="imgs/alex-600_x_337.jpg 1x, imgs/alex-900_x_506.jpg 2x"
+                            >
+                            <source media="(max-width: 575px)" 
+                            srcset="imgs/alex-300_x_168.jpg 1x, imgs/alex-600_x_337.jpg 2x"
+                            >
+                            <img src="imgs/alex-600_x_337.jpg" alt="Portrait of Allen Redshaw">
+                          </picture>
                     </swiper-slide>
                     <swiper-slide>
                         <h3>Digital Graphics</h3>
+                        <img src="imgs/heron.svg" alt="a graphic of a heron in flight">
                     </swiper-slide>
                     <swiper-slide>
                         <h3>Video</h3>
+                        <div class="videobox">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0r-K3F9fmbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                        </div>
                     </swiper-slide>
                 </swiper-container> 
             </div>
