@@ -71,6 +71,7 @@ body h1, h2 {
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
     color: inherit;
+    text-align: center;
 }
 
 /*have articles inherit font color*/
@@ -198,18 +199,27 @@ div.dropdown-menu a:nth-child(3) {
 .bluebox article {
     margin: 0em 2em;
     text-align: center;
-    font-size: 1.25em;
     line-height: 1.5;
 }
 
 .tanbox {
     background-color: #D9BB96;
     color: black;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 3em 2em;
+}
+
+
+.tanbox article {
+    padding-bottom: 2em;
 }
 
 .headders {
     text-align: center;
 }
+
+/** button styles **/
 
 button.bpbt {
     background-color: #004C8F;
@@ -246,6 +256,9 @@ button.bpbt {
     height: 100%;
 }
 
+/** form styles **/
+
+
 /*** Footer ***/
 
 /* style footer */
@@ -281,6 +294,10 @@ footer small {
 
     .hero {
         background-image: url(../imgs/sunset_hull-900_x_675.jpg); 
+    }
+
+    article {
+        font-size: 1.25em;
     }
 }
 /**** bootstrap md ****/
