@@ -82,7 +82,7 @@ article {
 
 /*apply and style headder background img*/
 .headderbanner {
-    background-image: url(../imgs/locks_flare.jpg);
+    background-image: url(../imgs/locks_flare-600_x_450.jpg);
     background-position: 50% 10%;
     background-size: 120%;
 }
@@ -178,7 +178,7 @@ div.dropdown-menu a:nth-child(3) {
 /** Hero Banner **/
 
 .hero {
-    background-image: url(../imgs/sunset_hull.jpg);
+    background-image: url(../imgs/sunset_hull-600_x_450.jpg);
     background-position: center;
     background-size: cover;
     margin: 1em;
@@ -275,7 +275,13 @@ footer small {
 
 /**** botstrap sm ****/
 @media only screen and (min-width: 576px) {
-    
+    .headderbanner {
+        background-image: url(../imgs/locks_flare-900_x_675.jpg);
+    }
+
+    .hero {
+        background-image: url(../imgs/sunset_hull-900_x_675.jpg); 
+    }
 }
 /**** bootstrap md ****/
 @media only screen and (min-width: 768px){
@@ -303,6 +309,13 @@ footer small {
 @media only screen and (min-width:992px) {
 
     /*** General ***/
+    .headderbanner {
+        background-image: url(../imgs/locks_flare-1800_x_1350.jpg);
+    }
+
+    .hero {
+        background-image: url(../imgs/sunset_hull-1800_x_1350.jpg);
+    }
 
     /*hide stuff from desktop*/
     .desktop-hid {
