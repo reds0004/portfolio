@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -103,56 +104,64 @@
         <div class="container">
             <h1 id="skiptarget">Work</h1>
             <div class="tanbox container">
-                <h2>Multi Media</h2>
-                <swiper-container>
-                    <swiper-slide>
-                        <h3>General Photography</h3>
-                        <picture>
-                            <source media="(min-width: 992px)" 
-                            srcset="imgs/duck-1800_x_1199.jpg"
-                            >
-                            <source media="(min-width: 768px)" 
-                            srcset="imgs/duck-900_x_599.jpg 1x, imgs/duck-1800_x_1199.jpg 2x"
-                            >
-                            <source media="(min-width: 768px)" 
-                            srcset="imgs/duck-600_x_400.jpg 1x, imgs/duck-900_x_599.jpg 2x"
-                            >
-                            <source media="(max-width: 575px)" 
-                            srcset="imgs/duck-300_x_199.jpg 1x, imgs/duck-600_x_400.jpg 2x"
-                            >
-                            <img src="imgs/duck-600_x_400.jpg" alt="A male wood duck">
-                          </picture>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h3>Portraits</h3>
-                        <picture>
-                            <source media="(min-width: 992px)" 
-                            srcset="imgs/alex-1800_x_1012.jpg"
-                            >
-                            <source media="(min-width: 768px)" 
-                            srcset="imgs/alex-900_x_506.jpg 1x, imgs/alex-1800_x_1012.jpg 2x"
-                            >
-                            <source media="(min-width: 768px)" 
-                            srcset="imgs/alex-600_x_337.jpg 1x, imgs/alex-900_x_506.jpg 2x"
-                            >
-                            <source media="(max-width: 575px)" 
-                            srcset="imgs/alex-300_x_168.jpg 1x, imgs/alex-600_x_337.jpg 2x"
-                            >
-                            <img src="imgs/alex-600_x_337.jpg" alt="Portrait of Allen Redshaw">
-                          </picture>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h3>Digital Graphics</h3>
-                        <img src="imgs/heron.svg" alt="a graphic of a heron in flight">
-                    </swiper-slide>
-                    <swiper-slide>
-                        <h3>Audio & Video</h3>
-                        <div class="videobox">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0r-K3F9fmbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                        </iframe>
+                
+                <div class="swiper">
+                    <h2>Multi Media</h2>
+                    <div class="swiper-button-prev mobile-hid"></div>
+                    <div class="swiper-button-next mobile-hid"></div>
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <h3>General Photography</h3>
+                            <picture>
+                                <source media="(min-width: 992px)" 
+                                srcset="imgs/duck-1800_x_1199.jpg"
+                                >
+                                <source media="(min-width: 768px)" 
+                                srcset="imgs/duck-900_x_599.jpg 1x, imgs/duck-1800_x_1199.jpg 2x"
+                                >
+                                <source media="(min-width: 768px)" 
+                                srcset="imgs/duck-600_x_400.jpg 1x, imgs/duck-900_x_599.jpg 2x"
+                                >
+                                <source media="(max-width: 575px)" 
+                                srcset="imgs/duck-300_x_199.jpg 1x, imgs/duck-600_x_400.jpg 2x"
+                                >
+                                <img src="imgs/duck-600_x_400.jpg" alt="A male wood duck">
+                            </picture>
                         </div>
-                    </swiper-slide>
-                </swiper-container> 
+                        <div class="swiper-slide">
+                            <h3>Portraits</h3>
+                            <picture>
+                                <source media="(min-width: 992px)" 
+                                srcset="imgs/alex-1800_x_1012.jpg"
+                                >
+                                <source media="(min-width: 768px)" 
+                                srcset="imgs/alex-900_x_506.jpg 1x, imgs/alex-1800_x_1012.jpg 2x"
+                                >
+                                <source media="(min-width: 768px)" 
+                                srcset="imgs/alex-600_x_337.jpg 1x, imgs/alex-900_x_506.jpg 2x"
+                                >
+                                <source media="(max-width: 575px)" 
+                                srcset="imgs/alex-300_x_168.jpg 1x, imgs/alex-600_x_337.jpg 2x"
+                                >
+                                <img src="imgs/alex-600_x_337.jpg" alt="Portrait of Allen Redshaw">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>Digital Graphics</h3>
+                            <img src="imgs/heron.svg" alt="a graphic of a heron in flight">
+                        </div>
+                        <div class="swiper-slide">
+                            <h3>Audio & Video</h3>
+                            <div class="videobox">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0r-K3F9fmbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tanbox container">
                 <article>
@@ -195,9 +204,39 @@
             
         </div>
     </footer>
-    <!-- additional library for crousel slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
+    
+
+    <!-- additional library for crousel slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+
+    <script>
+    var swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+    });
+  </script>
+
+  
+  
+  
+  
+  
+  
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
