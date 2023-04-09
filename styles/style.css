@@ -55,6 +55,7 @@ img {
     margin: 0 auto; 
     max-width: 100%;
     height: auto;
+    padding-bottom: 1em;
   }
 
   
@@ -186,6 +187,10 @@ div.dropdown-menu a:nth-child(3) {
     padding: 3em;
 }
 
+article.nobox {
+    padding: 1em;
+}
+
 
 .bluebox {
     background-color: rgba(0,76,143,0.8);
@@ -194,6 +199,13 @@ div.dropdown-menu a:nth-child(3) {
     color: #f2f2f2;
 }
 
+.bluebanner {
+    background-color: #004C8F;
+    color: #f2f2f2;
+    padding: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
 
 
 .bluebox article {
@@ -241,8 +253,17 @@ button.bpbt {
     color: #f2f2f2
 }
 
-/* swiper button styles */
-  
+/* swiper styles */
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    padding: 0em 5em;
+}
+
 
 .videobox {
     position: relative;
@@ -260,6 +281,14 @@ button.bpbt {
 }
 
 /** form styles **/
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    text-align: start;
+}
 
 
 /*** Footer ***/
@@ -359,6 +388,7 @@ footer small {
         display: flex;
         background-color: #004C8F;
         margin-top: 2rem;
+        margin-bottom: 0;
     }
 
     nav ul li {
@@ -391,7 +421,14 @@ footer small {
 
     /*** Main ***/
 
+    div.webdev {
+        max-width: 50%;
+        padding: 10%;
+    }
 
+    div.swiper {
+        width: 90%;
+    }
     
     /*** Footer ***/
     
