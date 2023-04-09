@@ -55,8 +55,8 @@ img {
     margin: 0 auto; 
     max-width: 100%;
     height: auto;
-    padding-bottom: 1em;
-  }
+    margin-bottom: 1em;
+}
 
   
   
@@ -222,10 +222,10 @@ article.nobox {
     padding: 3em 2em;
 }
 
-
 .tanbox article {
     padding-bottom: 2em;
 }
+
 
 .headders {
     text-align: center;
@@ -260,8 +260,8 @@ button.bpbt {
     align-items: center;
 }
 
-.swiper-slide {
-    padding: 0em 5em;
+div.swiper-button-prev, div.swiper-button-next {
+    display: none;
 }
 
 
@@ -381,6 +381,10 @@ footer small {
         padding-top: 2rem;
     }
 
+    .swiper-slide {
+        padding: 0em 5em;
+    }
+
 
     /** nav **/
     
@@ -428,6 +432,10 @@ footer small {
 
     div.swiper {
         width: 90%;
+    }
+
+    div.swiper-button-prev, div.swiper-button-next {
+        display: block;
     }
     
     /*** Footer ***/
