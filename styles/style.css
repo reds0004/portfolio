@@ -260,7 +260,7 @@ button.bpbt {
     align-items: center;
 }
 
-div.swiper-button-prev, div.swiper-button-next {
+button.swiper-button-prev, button.swiper-button-next {
     display: none;
 }
 
@@ -434,8 +434,10 @@ footer small {
         width: 90%;
     }
 
-    div.swiper-button-prev, div.swiper-button-next {
+    button.swiper-button-prev, button.swiper-button-next {
         display: block;
+        border: none;
+        background: transparent;
     }
     
     /*** Footer ***/
