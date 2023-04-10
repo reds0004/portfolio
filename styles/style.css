@@ -75,6 +75,7 @@ body h1, h2 {
     text-align: center;
 }
 
+/*sizes for headdings*/
 body h3 {
     margin-top: 1em;
     font-size: 1.25rem;
@@ -139,16 +140,19 @@ article {
     background-color: rgba(0,76,143,1);
 }
 
+/*opaque during hiver*/
 .hamburger-box:hover {
     background-color: rgba(0,76,143,1);
 }
 
+/*style dropdown*/
 div.dropdown-menu {
     background-color: #004C8F;
     padding: 0px;
     margin: 0px;
 }
 
+/*dropdown links*/
 .dropdown-menu a {
     color: #f2f2f2;
     background-color: #004C8F;
@@ -158,6 +162,7 @@ div.dropdown-menu {
     padding-bottom: 1em;
 }
 
+/*change current page visually in nav*/
 a.current {
     color:#f2f2f2;
     text-decoration: underline;
@@ -175,6 +180,7 @@ div.dropdown-menu a:nth-child(3) {
     border-bottom: 0px;
 }
 
+/*style mouseover*/
 .dropdown-menu a:hover {
     color: #f2f2f2;
     background-color: #004C8F;
@@ -184,26 +190,28 @@ div.dropdown-menu a:nth-child(3) {
 
 /** Hero Banner **/
 
+/*hero img*/
 .hero {
     background-image: url(../imgs/sunset_hull-600_x_450.jpg);
     background-position: center;
     background-size: cover;
     margin: 1em;
-    padding: 3em;
 }
 
+/*style 1 article not in a colour div*/
 article.nobox {
     padding: 1em;
 }
 
-
+/*stle blue hero*/
 .bluebox {
-    background-color: rgba(0,76,143,0.8);
+    background-color: rgba(0,76,143,0.9);
     padding-top: 4em;
     padding-bottom: 2em;
     color: #f2f2f2;
 }
 
+/*style blue bars with h1 in them at top*/
 .bluebanner {
     background-color: #004C8F;
     color: #f2f2f2;
@@ -212,13 +220,14 @@ article.nobox {
     margin-bottom: 1em;
 }
 
-
+/* style article in hero*/
 .bluebox article {
-    margin: 0em 2em;
+    margin: 0em 2em 1em 2em;
     text-align: center;
     line-height: 1.5;
 }
 
+/*style the tan boxes*/
 .tanbox {
     background-color: #D9BB96;
     color: black;
@@ -227,17 +236,17 @@ article.nobox {
     padding: 3em 2em;
 }
 
+/*style article in the tan boxes*/
 .tanbox article {
     padding-bottom: 2em;
 }
 
-
+/*center headders in hero*/
 .headders {
     text-align: center;
 }
 
 /** button styles **/
-
 button.bpbt {
     background-color: #004C8F;
     border: 1px solid #f2f2f2;
@@ -245,6 +254,7 @@ button.bpbt {
     align-self: center;
 }
 
+/*span box to add extra border to the buttons*/
 .bpbt span {
     border: 1px solid #f2f2f2;
     color: #f2f2f2;
@@ -252,31 +262,33 @@ button.bpbt {
     
 }
 
+/*style button hover*/
 .bttn div:hover {
     text-decoration: underline;
     color: #f2f2f2
 }
 
 /* swiper styles */
-
 .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
+/*hide swiper buttons on mobile*/
 button.swiper-button-prev, button.swiper-button-next {
     display: none;
 }
 
-
+/*style div holding iframe*/
 .videobox {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
 }
-  
-  .container iframe {
+
+/*set iframe to fill its container*/
+.container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -290,6 +302,7 @@ button.swiper-button-prev, button.swiper-button-next {
     flex-direction: column;
 }
 
+/*align form labels right*/
 .form-group label {
     text-align: start;
 }
@@ -305,25 +318,36 @@ footer .container-fluid {
     justify-content: center;
 }
 
+/*social media links flexbox*/
 .socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+/*style social media svg*/
 .socials svg {
     margin: 2em;
     margin-bottom: 0em;
 }
 
+/*center stuff in footer*/
 .footercr {
     text-align: center;
     color: #f2f2f2;
     margin-bottom: 1em;
 }
 
+/*hero banner was breaking below here so i moved this rule up from xs*/
+@media only screen and (min-width: 380) {
+    .hero {
+        padding: 3em;
+    }
+}
+
 /**** botstrap sm ****/
 @media only screen and (min-width: 576px) {
+    /*bigger imgs*/
     .headderbanner {
         background-image: url(../imgs/locks_flare-900_x_675.jpg);
     }
@@ -332,6 +356,7 @@ footer .container-fluid {
         background-image: url(../imgs/sunset_hull-900_x_675.jpg); 
     }
 
+    /*bigger font*/
     article {
         font-size: 1.25em;
     }
@@ -339,22 +364,11 @@ footer .container-fluid {
 /**** bootstrap md ****/
 @media only screen and (min-width: 768px){
 
-    /*** General ***/
-
-
-    /*** Header ***/
-
-    
-
+    /*adjust position/size of headder*/
     .headderbanner {
         background-size: 150%;
     }
 
-    /*** Main ***/
-
-    /*** Footer ***/
-
-    
 
 }
 
@@ -362,6 +376,7 @@ footer .container-fluid {
 @media only screen and (min-width:992px) {
 
     /*** General ***/
+    /*bigger images again*/
     .headderbanner {
         background-image: url(../imgs/locks_flare-1800_x_1350.jpg);
     }
@@ -385,6 +400,7 @@ footer .container-fluid {
         padding-top: 2rem;
     }
 
+    /* push images in in swiper*/
     .swiper-slide {
         padding: 0em 5em;
     }
@@ -392,6 +408,7 @@ footer .container-fluid {
 
     /** nav **/
     
+    /*style desktop nav*/
     nav ul {
         display: flex;
         background-color: #004C8F;
@@ -399,6 +416,7 @@ footer .container-fluid {
         margin-bottom: 0;
     }
 
+    /*style dektop nav li*/
     nav ul li {
         border: 1px solid #f2f2f2;
         width: 25%;
@@ -413,12 +431,14 @@ footer .container-fluid {
         
     }
 
+    /*style hover on desktop nav links*/
     nav ul li a:hover {
         color: #f2f2f2;
         text-decoration: underline;
         
     }
 
+    /*space out stuff in nav ul*/
     .desktopnav ul {
         width: 100%;
         display: flex;
@@ -428,7 +448,7 @@ footer .container-fluid {
 
 
     /*** Main ***/
-
+    /* make webdev tan box in work smaller*/
     div.webdev {
         max-width: 50%;
         padding: 10%;
@@ -438,6 +458,7 @@ footer .container-fluid {
         width: 90%;
     }
 
+    /* re appear swiper buttons */
     button.swiper-button-prev, button.swiper-button-next {
         display: block;
         border: none;
