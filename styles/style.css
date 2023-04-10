@@ -312,7 +312,7 @@ footer .container-fluid {
     margin-bottom: 0em;
 }
 
-footer small {
+.footercr {
     text-align: center;
     color: #f2f2f2;
     margin-bottom: 1em;
