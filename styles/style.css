@@ -195,7 +195,8 @@ div.dropdown-menu a:nth-child(3) {
     background-image: url(../imgs/sunset_hull-600_x_450.jpg);
     background-position: center;
     background-size: cover;
-    margin: 1em;
+    margin: 0.5em;
+    padding: 3em 0.5em;
 }
 
 /*style 1 article not in a colour div*/
@@ -339,9 +340,11 @@ footer .container-fluid {
 }
 
 /*hero banner was breaking below here so i moved this rule up from xs*/
-@media only screen and (min-width: 380) {
+@media only screen and (min-width: 380px) {
+    
     .hero {
-        padding: 3em;
+        padding: 3em 1em;
+        margin: 1em;
     }
 }
 
@@ -354,6 +357,7 @@ footer .container-fluid {
 
     .hero {
         background-image: url(../imgs/sunset_hull-900_x_675.jpg); 
+        padding: 3em;
     }
 
     /*bigger font*/
