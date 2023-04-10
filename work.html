@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -87,13 +87,13 @@
                                 <rect fill="#f2f2f2" x="0" y="30" width="120" height="20"></rect>
                                 <rect fill="#f2f2f2" x="0" y="60" width="120" height="20"></rect>
                             </svg>
-                          </a>
-                          <!-- dropdown items -->
-                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="index.html">Home</a>
-                            <a class="dropdown-item" href="about.html">About</a>
-                            <a class="dropdown-item current" href="#">Work</a>
-                            <a class="dropdown-item" href="contact.html">Contact</a>
+                            </a>
+                            <!-- dropdown items -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="about.html">About</a>
+                                <a class="dropdown-item current" href="#">Work</a>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
                         </div>
                     </div>
                 </nav>
@@ -106,7 +106,6 @@
         </div>
         <div class="container">
             <div class="tanbox container">
-                
                 <div class="swiper">
                     <h2>Multi Media</h2>
                     <!--these were div tags in the documentation but changing them to buttons lets keyboard focus on them-->
@@ -115,11 +114,11 @@
                     <!--this adds dots so you know the image is swipeable-->
                     <div class="swiper-pagination"></div>
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                    <div itemscope itemtype="http://schema.org/CreativeWork" class="swiper-wrapper">
                       <!-- Slides -->
                         <div class="swiper-slide">
-                            <h3>General Photography</h3>
-                            <picture>
+                            <h3 itemprop="name">General Photography</h3>
+                            <picture itemprop="image">
                                 <source media="(min-width: 992px)" 
                                 srcset="imgs/duck-1800_x_1199.jpg"
                                 >
@@ -136,8 +135,8 @@
                             </picture>
                         </div>
                         <div class="swiper-slide">
-                            <h3>Portraits</h3>
-                            <picture>
+                            <h3 itemprop="name">Portraits</h3>
+                            <picture itemprop="image">
                                 <source media="(min-width: 992px)" 
                                 srcset="imgs/alex-1800_x_1012.jpg"
                                 >
@@ -154,13 +153,13 @@
                             </picture>
                         </div>
                         <div class="swiper-slide">
-                            <h3>Digital Graphics</h3>
-                            <img src="imgs/heron.svg" alt="a graphic of a heron in flight">
+                            <h3 itemprop="name">Digital Graphics</h3>
+                            <img itemprop="image" src="imgs/heron.svg" alt="a graphic of a heron in flight">
                         </div>
                         <div class="swiper-slide">
-                            <h3>Audio & Video</h3>
-                            <div class="videobox">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0r-K3F9fmbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            <h3 itemprop="name">Audio & Video</h3>
+                            <div itemprop="video" class="videobox">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0r-K3F9fmbg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                 </iframe>
                             </div>
                         </div>
@@ -168,19 +167,21 @@
                 </div>
             </div>
             <div class="tanbox container webdev">
-                <article>
+                <article itemscope itemtype="http://schema.org/CreativeWork">
                     <h2>Web Development</h2>
                     <section>
-                        <button class="bpbt" onclick="window.location.href='https://reds0004.github.io/mtm6201-midterm/';">
-                            <span>Mid-Term</span>
+                        <h3 itemprop="name">HTML/CSS Website</h3>
+                        <button itemprop="url" class="bpbt" onclick="window.location.href='https://reds0004.github.io/mtm6201-midterm/';">
+                            <span>Have A Look!</span>
                         </button>
-                        <p>This is a responsive website built only using HTML and CSS. It's built to comply with WCAG guidelines.</p>
+                        <p itemprop="description">This is a responsive website built only using HTML and CSS. It's built to comply with WCAG guidelines.</p>
                     </section>
                     <section>
-                        <button class="bpbt" onclick="window.location.href='https://aeredsdev.com/';">
-                            <span>WordPress</span>
+                        <h3 itemprop="name">Wordpress Portfolio</h3>
+                        <button itemprop="url" class="bpbt" onclick="window.location.href='https://aeredsdev.com/';">
+                            <span>Have A Look!</span>
                         </button>
-                        <p>This is a Portfolio built with the CMS WordPress</p>
+                        <p itemprop="description">This is a Portfolio built with the CMS WordPress</p>
                     </section>
                 </article>
             </div>  
@@ -190,18 +191,21 @@
         <!--footer extending full width-->
         <div class="container-fluid">
             <!--social media links-->
-            <ul class="socials">
-                <li><a href="https://www.instagram.com/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="instagram" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="instagram">
+            <ul itemscope itemtype="https://schema.org/LocalBusiness" class="socials">
+                <li><a itemprop="url" href="https://www.instagram.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="instagram">
+                        <title>Instagram</title>
                         <path fill="#f2f2f2" d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z"></path>
                     </svg>
                 </a></li>
-                <li><a href="https://www.facebook.com/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="facebook" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="facebook">
+                <li><a itemprop="url" href="https://www.facebook.com/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="facebook">
+                        <title>Facebook</title>
                         <path fill="#f2f2f2" d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"></path></svg>        
                 </a></li>
-                <li><a href="https://ca.linkedin.com/"  target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="linked in" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="linkedin">
+                <li><a itemprop="url" href="https://ca.linkedin.com/"  target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="50" height="50" viewBox="0 0 24 24" id="linkedin">
+                        <title>Linked In</title>
                         <path fill="#f2f2f2" d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"></path>
                     </svg>
                 </a></li>
