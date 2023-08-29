@@ -273,6 +273,54 @@ button.bpbt {
     color: #fff;
 }
 
+/* Set a maximum height for the carousel container */
+.carousel {
+    height: 60vh; /* Adjust this value as needed */
+    overflow: hidden; /* Hide any content that exceeds the maximum height */
+}
+
+/* Style the carousel and its items */
+.carousel-inner {
+    max-height: 100%; /* Make the carousel fit within the container's max-height */
+    object-fit: cover;
+}
+
+/* Style the figure or picture tags */
+.carousel-item figure,
+.carousel-item picture {
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    max-height: 100%; /* Make the figure/picture take the full height of the carousel item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: auto;
+    max-height: 60vh;
+    object-fit: cover; /* Scale the image to fully cover the container while maintaining aspect ratio */
+}
+
+
+
+/* Adjust the caption's position */
+.carousel-caption {
+    bottom: 0; /* Position the caption at the bottom */
+    width: 50%; /* Make the caption take the full width */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+    color: white; /* Set the caption text color */
+    padding: 0.5em; /* Add some padding */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.carousel-control-next,
+button.carousel-control-prev {
+    background-color: rgba(44,78,104,0.7)
+}
+
 /** form styles **/
 .form-group {
     display: flex;
