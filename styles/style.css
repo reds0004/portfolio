@@ -275,7 +275,7 @@ button.bpbt {
 
 /* Set a maximum height for the carousel container */
 .carousel {
-    height: 60vh; /* Adjust this value as needed */
+    height: 70vh; /* Adjust this value as needed */
     overflow: hidden; /* Hide any content that exceeds the maximum height */
 }
 
@@ -297,28 +297,33 @@ button.bpbt {
     object-fit: cover;
 }
 
+figure.project-svg img,
 .carousel-item img {
     width: auto;
-    max-height: 60vh;
+    max-height: 70vh;
     object-fit: cover; /* Scale the image to fully cover the container while maintaining aspect ratio */
 }
 
 
 
 /* Adjust the caption's position */
-.carousel-caption {
+figcaption,
+figcaption.carousel-caption {
     bottom: 0; /* Position the caption at the bottom */
-    width: 50%; /* Make the caption take the full width */
-    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+    width: 50%;
+    background-color: rgba(44,78,104,0.7); /* Add a semi-transparent background */
+    text-align: center;
+    border-radius: .5em;
     color: white; /* Set the caption text color */
     padding: 0.5em; /* Add some padding */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
 }
 
 button.carousel-control-next,
 button.carousel-control-prev {
-    background-color: rgba(44,78,104,0.7)
+    background-color: rgba(44,78,104,0.7);
 }
 
 /** form styles **/
